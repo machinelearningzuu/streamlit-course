@@ -33,14 +33,14 @@ while counter <= 365:
                                     end=end_date
                                     ) #get the historical prices for this ticker
 
-        ph_close_txt.write("""
-        ## Closing Price
-        """)
+        # ph_close_txt.write("""
+        # ## Closing Price
+        # """)
         ph_close.line_chart(tickerDf.Close)
 
-        ph_volume_txt.write("""
-        ## Volume
-        """)
+        # ph_volume_txt.write("""
+        # ## Volume
+        # """)
         ph_volume.line_chart(tickerDf.Volume)
 
         time_initial = time.time()
